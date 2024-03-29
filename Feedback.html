@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Load icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--link to external css-->
+  <link rel="stylesheet" href="Accessories.css">
+
+	<title>Contact Us</title>
+
+	<style>
+		body{
+            padding-top: 10px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+		p.title{
+			text-align: center;
+			font-weight: bold;
+			font-size: 300%;
+		}
+		a:active{
+			color: green;
+			text-decoration: none;
+		}
+
+		a:hover{
+			color: red;
+			text-decoration: none;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		hr{
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        table{
+            width: 100%;
+            border: 1px solid black;
+        }
+        td{
+            padding-left:130px;
+            font-size: 20px;
+       }
+		img {
+			vertical-align: center;
+		}
+		#send{
+		width:30em; height:2em;
+		background-color:blue;
+		}
+		#fo
+		{
+		background-color:#ebebeb;
+		margin:auto;
+		padding-left:100px;
+		width:500px;
+		}
+		 	   .dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+<!--LOGO-->
+<img src="image/logo.jpg" width="100" height="100" style="margin-left:45%"/>
+<!-- Title -->
+<p class="title">Global Accessories</p>
+<!--Navigation-->
+<table>
+    <tr>
+        <td><a href="FirstPage.html"/>Home</td>
+		<!--drop--down bar-->
+        <td><a href="Accessories.html"> <div class="dropdown">
+    <button class="dropbtn">Accessories
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cable.html">Cables</a>
+      <a href="casing.html">Casing</a>
+      <a href="earphone.html">Earphone</a>
+	  <a href="powerbank.html">Powerbank</a>
+	  <a href="screenprotectors.html">Screenprotectors</a>
+    </div></td>
+        <td><a href="AboutUs.html"> About Us</td>
+		<td><a href="contect us.html">Contact Us</td>
+    </tr>
+</table>
+<br /><br />
+
+<a href="firstpage.html">Home</a>
+<span>></span>
+<span><a href="contect us.html">Contact Us</span></a><span>>FeedBack</span>
+<br /><br />
+<!--contect form-->
+<h1 style="text-align:center;">FeedBack</h1>
+<form id="fo">
+<label>Full Name:</label>
+<br/>
+<input type="text" size="50" maxlength="30" required >
+<br/>
+<label>Last Name:</label><br/>
+<input type="text" size="50"  maxlength="30" required >
+<br/>
+<label>Email:</label><br/>
+<input type="email" size="50"  maxlength="30" required >
+<br/>
+<label>Message:</label><br/>
+<input type="text" size="50"  maxlength="30" required >
+<br/>
+<label>Additional Details:</label><br/>
+<textarea rows="5" cols="50">
+</textarea><br/><br/>
+<input type="submit" value="Send Message" id="send">
+<hr/>
+
+
+</form>
+
+<!-- Footer -->
+<h4><span>Quick Links<hr/><span/></h4>
+<ul type="none">
+	<li>
+		<a href="cable.html">Cables</a>
+	</li>
+	<li>
+		<a href="casing.html">Casing</a>
+	</li>
+	<li>
+		<a href="earphone.html">Earphone</a>
+	</li>
+	<li>
+		<a href="powerbank.html">Powerbank</a>
+	</li>
+	<li>
+		<a href="screenprotectors.html">Screen Protectors</a>
+	</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Load icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--link to external css-->
+	<link rel="stylesheet" href="Accessories.css">
+	<title>Home</title>
+
+	<style>
+		body{
+            padding-top: 10px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+		p.title{
+			text-align: center;
+			font-weight: bold;
+			font-size: 300%
+		}
+		a:active{
+			color: green;
+			text-decoration: none;
+		}
+
+		a:hover{
+			color: red;
+			text-decoration: none;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+        table{
+            width: 100%;
+            border: 1px solid black;
+        }
+        td{
+            padding-left: 130px;
+            font-size: 20px;
+       }
+		img {
+			vertical-align: center;
+		}
+		p.bestselling{
+			font-weight: bold;
+			font-size: 110%;
+			padding-right: 10%;
+			padding-left: 10%;
+
+		}
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .text {font-size: 11px}
+		}
+	.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+<!--LOGO-->
+<img src="image/logo.jpg" width="100" height="100" style="margin-left:45%"/>
+
+<!-- Title -->
+<p class="title">Global Accessories</p>
+
+<!--Navigation-->
+<table>
+    <tr>
+        <td><a href="FirstPage.html"/>Home</td>
+ <!--drop--down bar-->
+        <td><a href="Accessories.html"> <div class="dropdown">
+    <button class="dropbtn">Accessories
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cable.html">Cables</a>
+      <a href="casing.html">Casing</a>
+      <a href="earphone.html">Earphone</a>
+	  <a href="powerbank.html">Powerbank</a>
+	  <a href="screenprotectors.html">Screenprotectors</a>
+    </div></td>
+        <td><a href="AboutUs.html"> About Us</td>
+		<td><a href="contect us.html">Contact Us</td>
+    </tr>
+</table>
+<br /><br />
+
+<!-- Slideshow -->
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="informationpicture/screenprotectorspicture/screenprotectors1.jpg" style="width: 300px; height: 300px; padding-left: 365px">
+</div>
+<div class="mySlides fade">
+  <img src="informationpicture/powerbankpicture/powerbank1.jpg" style="width: 300px; height: 300px; padding-left: 365px">
+</div>
+<div class="mySlides fade">
+  <img src="informationpicture/earphonepicture/earphone1.jpg" style="width: 300px; height: 300px; padding-left: 365px">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<br /><br />
+
+<!-- Slideshow(JavaScripts) -->
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<!-- Best Selling Product Image-->
+<p class="bestselling">Best Selling Product</p>
+<img src="informationpicture/earphonepicture/earphone4.jpg" width="200" height="200" style="border: 1px solid black; float: left; margin-left: 10%; margin-right: 10%;" />
+<p style="font-weight: bold; padding-left: 490px; padding-bottom: 25px;">Bring the Best to your life</p>
+<span style="padding-left: 50px;">Looking for Best Selling Product</span>
+<br /><br /><br />
+<a href="accessories.html"><span style="padding-left: 50px; text-decoration: underline; color: blue;">Click Here</span></a>
+<br /><br /><br /><br /><br /><br />
+
+<!-- Footer -->
+<h4><span>Quick Links<hr/><span/></h4>
+<ul type="none">
+	<li>
+		<a href="cable.html">Cables</a>
+	</li>
+	<li>
+		<a href="casing.html">Casing</a>
+	</li>
+	<li>
+		<a href="earphone.html">Earphone</a>
+	</li>
+	<li>
+		<a href="powerbank.html">Powerbank</a>
+	</li>
+	<li>
+		<a href="screenprotectors.html">Screen Protectors</a>
+	</li>
+</ul>
+</body>
+</html>
